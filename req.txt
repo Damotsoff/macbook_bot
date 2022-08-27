@@ -1,0 +1,6 @@
+aiogram==2.21
+requests
+psycopg2
+fake-useragent
+beautifulsoup4
+requests
