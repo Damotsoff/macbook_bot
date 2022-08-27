@@ -18,7 +18,7 @@ def read_to_db(user_name,user_id,title,price):
     #ТУТ НУЖНО ВНЕСТИ ДАННЫЕ ОТ СВОЕЙ БАЗЫ 
     conn = psycopg2.connect(dbname='test',user='geo',password='12345',host='localhost')
     cursor =conn.cursor()
-    cursor.execute('truncate tgtest cascade ;')
+    # cursor.execute('truncate tgtest cascade ;')
     cursor.execute("INSERT INTO tgtest(user_name ,user_id,title_mac,price) VALUES(%s,%s,%s,%s)",(user_name,user_id,title,price))
     conn.commit()
     cursor.close()
