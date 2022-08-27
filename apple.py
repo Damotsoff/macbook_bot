@@ -21,5 +21,3 @@ def parse():
     list_price = [''.join(re.findall(r'\d+', str(i))) for i in price_mac]
     list_zip = list(zip(list_name_mac,list_price,list_image_mac))
     return list_zip
-
-parse()
