@@ -1,6 +1,7 @@
 aiogram==2.21
 requests
-psycopg2
+psycopg2-binary
 fake-useragent
 beautifulsoup4
 requests
+lxml
